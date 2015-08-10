@@ -75,6 +75,8 @@ function initSubmodules(cb) {
   console.log('Detected a git install');
   console.log('Cloning libSass into src/libsass');
 
+  var commit = "eadae5b9eb6852db6a3a46a1a3b236192e3a3dd2";
+
   var clone = spawn('git', ['clone', 'git@github.com:sass/libsass.git', './src/libsass']);
   manageProcess(clone, function(err) {
     if (err) {
@@ -82,9 +84,9 @@ function initSubmodules(cb) {
       return;
     }
 
-    console.log('Checking out libsass to ' + pkg.libsass);
+    console.log('Checking out libsass to ' + commit);
 
-    var checkout = spawn('git', ['checkout', pkg.libsass], { cwd: './src/libsass' });
+    var checkout = spawn('git', ['checkout', commit], { cwd: './src/libsass' });
     manageProcess(checkout, function(err) {
       cb(err);
     });
