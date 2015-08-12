@@ -42,6 +42,7 @@
         'libsass/src/source_map.cpp',
         'libsass/src/to_c.cpp',
         'libsass/src/to_string.cpp',
+        'libsass/src/to_value.cpp',
         'libsass/src/units.cpp',
         'libsass/src/utf8_string.cpp',
         'libsass/src/util.cpp'
