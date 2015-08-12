@@ -21,6 +21,7 @@
       ],
       'include_dirs': [
         '<!(node -e "require(\'nan\')")',
+        'src/libsass/include',
       ],
       'conditions': [
         ['libsass_ext == "" or libsass_ext == "no"', {
