@@ -12,10 +12,12 @@
         'libsass/src/base64vlq.cpp',
         'libsass/src/bind.cpp',
         'libsass/src/cencode.c',
+        'libsass/src/color_maps.c',
         'libsass/src/constants.cpp',
         'libsass/src/context.cpp',
         'libsass/src/cssize.cpp',
         'libsass/src/emitter.cpp',
+        'libsass/src/environment.cpp',
         'libsass/src/error_handling.cpp',
         'libsass/src/eval.cpp',
         'libsass/src/expand.cpp',
@@ -26,6 +28,7 @@
         'libsass/src/json.cpp',
         'libsass/src/lexer.cpp',
         'libsass/src/listize.cpp',
+        'libsass/src/memory_manager.cpp',
         'libsass/src/node.cpp',
         'libsass/src/output.cpp',
         'libsass/src/parser.cpp',
@@ -37,6 +40,7 @@
         'libsass/src/sass2scss.cpp',
         'libsass/src/sass_context.cpp',
         'libsass/src/sass_functions.cpp',
+        'libsass/src/sass_interface.cpp',
         'libsass/src/sass_util.cpp',
         'libsass/src/sass_values.cpp',
         'libsass/src/source_map.cpp',
@@ -45,7 +49,8 @@
         'libsass/src/to_value.cpp',
         'libsass/src/units.cpp',
         'libsass/src/utf8_string.cpp',
-        'libsass/src/util.cpp'
+        'libsass/src/util.cpp',
+        'libsass/src/values.cpp',
       ],
       'cflags!': [
         '-fno-exceptions'
